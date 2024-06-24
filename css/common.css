@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Task 1 */
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .item {
+    max-width: 392px;
+    background: #f6f6fe;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  .item h2 {
+    color: #2e2f42;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.96px;
+  }
+  .item ul {
+    margin-top: 16px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .item li {
+    border-radius: 4px;
+    border: 1px solid #808080;
+    padding: 8px 16px;
+  }
+}
+
+/* Task 2 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery .item {
+  width: calc((100% - 2 * 24px) / 3);
+  min-width: 360px;
+}
+
+.gallery .img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Task 3-4 */
+input {
+  padding: 8px 16px;
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  min-width: 360px;
+  margin-bottom: 16px;
+  display: block;
+  height: 40px;
+}
+
+button {
+  border-radius: 8px;
+  background: #4e75ff;
+  padding: 8px 16px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  cursor: pointer;
+  transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  height: 40px;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+/* Task 5 */
+.widget {
+  text-align: center;
+
+  button {
+    margin-top: 16px;
+  }
+}
+
+/* Task 6 */
+#controls {
+  display: flex;
+  gap: 16px;
+  max-width: 422px;
+
+  input[type="number"] {
+    min-width: 150px;
+    text-align: center;
+    margin: 0;
+  }
+
+  button[data-destroy] {
+    background: #ff4e4e;
+  }
+
+  button[data-destroy]:hover {
+    background: #ff7070;
+  }
+}
+
+#boxes {
+  width: max-content;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+#controls,
+#boxes {
+  border-radius: 8px;
+  background: #f6f6fe;
+  padding: 32px;
+}
+
+
